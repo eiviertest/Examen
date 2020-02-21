@@ -4,22 +4,20 @@ class MayorMenor():
         self.num1 = num1
         self.num2 = num2
 
-    def numeroMayor(a, b):
-        if self.a<self.b:
-            return b
+    def numeroMayor(self):
+        if num1<num2:
+            return num2
         else:
-            return a
+            return num1
 
-    def numeroMenor(a, b):
-        if self.a>self.b:
-            print("El número menor es: ", b)
+    def numeroMenor(self):
+        if num1>num2:
+            return num2
         else:
-            print("El número menor es: ", a)
+            return num1
 
-num1 = input('Ingrese primer número: ')
-num2 = input('ingrese segundo número: ')
+num1 = float(input('Ingrese primer número: '))
+num2 = float(input('ingrese segundo número: '))
 mayorMenor = MayorMenor(num1, num2)
-mayorMenor.
-
-numeroMayor(numero1, numero2)
-numeroMenor(numero1, numero2)
+print("El número mayor es:", mayorMenor.numeroMayor())
+print("El número menor es:", mayorMenor.numeroMenor())
